@@ -190,25 +190,50 @@ The application comes with pre-configured test users:
 
 ## 📸 Application Screenshots
 
-### Login Page
-The application features a beautiful, responsive login interface with gradient backgrounds and modern design.
+The Sweet Shop Management System features a modern, responsive interface with AI-generated product images. Below are comprehensive screenshots showcasing all key features:
 
-![Login Page - Clean, modern interface with sweet shop branding](screenshots/login.png)
+### 1. Login Page
+Clean, modern authentication interface with gradient backgrounds and sweet shop branding.
 
-### Dashboard - Sweet Catalog
-Users can browse through the complete catalog of sweets with AI-generated product images and Indian Rupee pricing.
+![Login Page](screenshots/Screenshot%202025-09-19%20012311.png)
 
-![Dashboard - Complete sweet catalog with images and pricing](screenshots/dashboard.png)
+### 2. User Registration  
+User-friendly registration form with validation and password strength indicators.
 
-### Admin Panel
-Administrators have full CRUD access to manage the sweet inventory with an intuitive interface.
+![Registration Page](screenshots/Screenshot%202025-09-19%20012441.png)
 
-![Admin Panel - Full inventory management capabilities](screenshots/admin-panel.png)
+### 3. User Dashboard - Sweet Catalog
+Complete sweet catalog browsing experience with AI-generated product images and Indian Rupee pricing.
 
-### Mobile Responsive Design
-The application is fully responsive and works seamlessly on all device sizes.
+![User Dashboard](screenshots/Screenshot%202025-09-19%20012516.png)
 
-![Mobile View - Responsive design for all devices](screenshots/mobile-view.png)
+### 4. Sweet Product Details
+Detailed product view showing AI-generated images, descriptions, pricing, and purchase options.
+
+![Product Details](screenshots/Screenshot%202025-09-19%20012544.png)
+
+### 5. Admin Panel - Inventory Management
+Comprehensive admin interface for managing sweet inventory with full CRUD operations.
+
+![Admin Panel](screenshots/Screenshot%202025-09-19%20012625.png)
+
+### 6. Admin Product Management
+Add/Edit product interface showing automatic AI image generation based on product names.
+
+![Product Management](screenshots/Screenshot%202025-09-19%20012652.png)
+
+### 7. Admin Inventory Dashboard
+Complete inventory overview with stock levels, categories, and real-time data.
+
+![Inventory Dashboard](screenshots/Screenshot%202025-09-19%20012720.png)
+
+### Key Visual Features Demonstrated:
+- ✨ **AI-Generated Images**: Every product has unique AI-created visuals
+- 💰 **Indian Currency**: All prices displayed in INR (₹)
+- 📱 **Responsive Design**: Works seamlessly across all device sizes
+- 🎨 **Modern UI**: Clean, professional interface with TailwindCSS
+- 🔐 **Role-Based Access**: Different interfaces for users and admins
+- 🍬 **Rich Product Catalog**: Comprehensive sweet shop inventory
 
 ## 🧪 Test Report
 
@@ -341,6 +366,14 @@ TDD-Kata-Sweet-Shop-Management-System/
 │   ├── postcss.config.js          # PostCSS configuration
 │   └── tsconfig.json              # TypeScript configuration
 ├── 📁 screenshots/                 # Application screenshots
+│   ├── README.md                  # Screenshots documentation
+│   ├── Screenshot 2025-09-19 012311.png # Login page interface
+│   ├── Screenshot 2025-09-19 012441.png # User registration form
+│   ├── Screenshot 2025-09-19 012516.png # User dashboard catalog
+│   ├── Screenshot 2025-09-19 012544.png # Product details view
+│   ├── Screenshot 2025-09-19 012625.png # Admin panel management
+│   ├── Screenshot 2025-09-19 012652.png # Admin product management
+│   └── Screenshot 2025-09-19 012720.png # Admin inventory dashboard
 ├── .gitignore                     # Root Git ignore patterns
 ├── ENVIRONMENT.md                 # Environment setup guide
 ├── start-app.ps1                  # PowerShell startup script

@@ -1,23 +1,33 @@
 # Screenshots Directory
 
-This directory contains screenshots of the Sweet Shop Management System application.
+This directory contains screenshots of the Sweet Shop Management System application demonstrating all key features and interfaces.
 
 ## Screenshots Included:
 
-1. **login.png** - Login page with modern design
-2. **dashboard.png** - Main dashboard showing sweet catalog
-3. **admin-panel.png** - Admin panel for inventory management
-4. **mobile-view.png** - Responsive mobile interface
+1. **Screenshot 2025-09-19 012311.png** - Login page with modern gradient design
+2. **Screenshot 2025-09-19 012441.png** - User registration interface  
+3. **Screenshot 2025-09-19 012516.png** - User dashboard with sweet catalog
+4. **Screenshot 2025-09-19 012544.png** - Product details view with AI images
+5. **Screenshot 2025-09-19 012625.png** - Admin panel inventory management
+6. **Screenshot 2025-09-19 012652.png** - Admin product management interface
+7. **Screenshot 2025-09-19 012720.png** - Admin inventory dashboard overview
 
-## How to Add Screenshots:
+## Features Demonstrated:
 
-1. Take screenshots of the running application at http://localhost:3000
-2. Save them in this directory with descriptive names
-3. Update the README.md file to reference the correct screenshot paths
+- ✨ AI-generated product images based on sweet names
+- 💰 Indian Rupee (₹) pricing throughout the application
+- 🔐 Role-based authentication (User/Admin)
+- 📱 Responsive design across all interfaces
+- 🍬 Comprehensive sweet shop management
+- 🎨 Modern TailwindCSS styling
 
-## Recommended Screenshot Dimensions:
+## Screenshot Details:
 
-- **Desktop Views**: 1920x1080 or 1440x900
+All screenshots were captured on September 19, 2025, showing the fully functional Sweet Shop Management System with:
+- Complete user authentication flow
+- AI-powered product catalog
+- Admin inventory management
+- Real-time data and interactions
 - **Mobile Views**: 375x812 (iPhone X dimensions)
 - **Format**: PNG for better quality
 
