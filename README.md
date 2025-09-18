@@ -202,38 +202,45 @@ User-friendly registration form with validation and password strength indicators
 
 ![Registration Page](screenshots/Screenshot%202025-09-19%20012441.png)
 
-### 3. User Dashboard - Sweet Catalog
-Complete sweet catalog browsing experience with AI-generated product images and Indian Rupee pricing.
+### 3. Admin Dashboard
+Administrative dashboard overview with complete sweet inventory management and analytics.
 
-![User Dashboard](screenshots/Screenshot%202025-09-19%20012516.png)
+![Admin Dashboard](screenshots/Screenshot%202025-09-19%20012516.png)
 
-### 4. Sweet Product Details
-Detailed product view showing AI-generated images, descriptions, pricing, and purchase options.
+### 4. Admin Panel - Add/Delete Items
+Admin interface for adding new products and deleting existing items with full CRUD operations.
 
-![Product Details](screenshots/Screenshot%202025-09-19%20012544.png)
+![Admin Panel for Items](screenshots/Screenshot%202025-09-19%20012544.png)
 
 ### 5. Admin Panel - Inventory Management
 Comprehensive admin interface for managing sweet inventory with full CRUD operations.
 
 ![Admin Panel](screenshots/Screenshot%202025-09-19%20012625.png)
 
-### 6. Admin Product Management
-Add/Edit product interface showing automatic AI image generation based on product names.
+### 6. User Dashboard - Sweet Catalog
+User browsing experience with AI-generated product images, pricing, and add to cart functionality.
 
-![Product Management](screenshots/Screenshot%202025-09-19%20012652.png)
+![User Dashboard](screenshots/Screenshot%202025-09-19%20012652.png)
 
-### 7. Admin Inventory Dashboard
-Complete inventory overview with stock levels, categories, and real-time data.
+### 7. User Dashboard - Stock Reduction
+User dashboard showing real-time stock reduction when items are added to cart, demonstrating inventory updates.
 
-![Inventory Dashboard](screenshots/Screenshot%202025-09-19%20012720.png)
+![User Dashboard Stock Update](screenshots/Screenshot%202025-09-19%20012720.png)
 
 ### Key Visual Features Demonstrated:
 - ✨ **AI-Generated Images**: Every product has unique AI-created visuals
 - 💰 **Indian Currency**: All prices displayed in INR (₹)
 - 📱 **Responsive Design**: Works seamlessly across all device sizes
 - 🎨 **Modern UI**: Clean, professional interface with TailwindCSS
-- 🔐 **Role-Based Access**: Different interfaces for users and admins
+- 🔐 **Role-Based Access**: Distinct admin and user interfaces
+- 🛡️ **Admin Controls**: Full CRUD operations for inventory management
+- 🛒 **Real-Time Updates**: Live stock reduction when items added to cart
 - 🍬 **Rich Product Catalog**: Comprehensive sweet shop inventory
+
+### Screenshot Flow Overview:
+**Authentication Flow**: Login → Registration
+**Admin Workflow**: Admin Dashboard → Item Management → Inventory Control
+**User Experience**: User Dashboard → Shopping → Real-time Stock Updates
 
 ## 🧪 Test Report
 
@@ -369,11 +376,11 @@ TDD-Kata-Sweet-Shop-Management-System/
 │   ├── README.md                  # Screenshots documentation
 │   ├── Screenshot 2025-09-19 012311.png # Login page interface
 │   ├── Screenshot 2025-09-19 012441.png # User registration form
-│   ├── Screenshot 2025-09-19 012516.png # User dashboard catalog
-│   ├── Screenshot 2025-09-19 012544.png # Product details view
-│   ├── Screenshot 2025-09-19 012625.png # Admin panel management
-│   ├── Screenshot 2025-09-19 012652.png # Admin product management
-│   └── Screenshot 2025-09-19 012720.png # Admin inventory dashboard
+│   ├── Screenshot 2025-09-19 012516.png # Admin dashboard overview
+│   ├── Screenshot 2025-09-19 012544.png # Admin add/delete items panel
+│   ├── Screenshot 2025-09-19 012625.png # Admin inventory management
+│   ├── Screenshot 2025-09-19 012652.png # User dashboard catalog
+│   └── Screenshot 2025-09-19 012720.png # User cart stock reduction
 ├── .gitignore                     # Root Git ignore patterns
 ├── ENVIRONMENT.md                 # Environment setup guide
 ├── start-app.ps1                  # PowerShell startup script
