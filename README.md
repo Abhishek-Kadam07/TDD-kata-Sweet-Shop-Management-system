@@ -26,9 +26,9 @@ The Sweet Shop Management System is a modern web application that allows users t
 ### Key Highlights
 - ✅ **100% Test Coverage** - Built using TDD methodology
 - ✅ **Environment Configuration** - Secure .env setup for sensitive data
+- ✅ **AI-Generated Product Images** - Dynamic images created based on product names
 - ✅ **Responsive Design** - Mobile-first approach with TailwindCSS
 - ✅ **Production Ready** - Comprehensive error handling and security
-- ✅ **Real Product Images** - Beautiful UI with matching sweet images
 - ✅ **Indian Currency Support** - All prices displayed in INR (₹)
 
 ## ✨ Features
@@ -41,11 +41,12 @@ The Sweet Shop Management System is a modern web application that allows users t
 - Persistent login sessions
 
 ### 🍬 Sweet Management
-- Browse complete sweet catalog with images
+- Browse complete sweet catalog with AI-generated images
 - Advanced search and filter functionality
 - Real-time inventory tracking
 - Product categories (chocolate, gummy, lollipop, etc.)
 - Detailed product descriptions
+- Automatic AI image generation for new products
 
 ### 🛒 Inventory Operations
 - Purchase sweets with automatic quantity reduction
@@ -58,7 +59,8 @@ The Sweet Shop Management System is a modern web application that allows users t
 - Mobile-friendly interface
 - Intuitive navigation with React Router
 - Real-time updates and feedback
-- Beautiful product images matching each sweet type
+- AI-generated product images based on sweet names
+- Dynamic image creation using Pollinations.ai service
 
 ### 🛡️ Security & Configuration
 - Environment variables for sensitive data
@@ -66,6 +68,34 @@ The Sweet Shop Management System is a modern web application that allows users t
 - CORS configuration for production
 - Comprehensive .gitignore setup
 - Production-ready deployment configuration
+
+## 🤖 AI-Generated Product Images
+
+This application features **automatic AI image generation** for all sweet products:
+
+### How It Works
+- **Dynamic Generation**: Every product automatically gets a unique image based on its name
+- **AI Service**: Uses [Pollinations.ai](https://pollinations.ai/) for high-quality image generation
+- **Smart Prompts**: Combines product name with food photography keywords for optimal results
+- **Consistent Quality**: 400x400px images optimized for web display
+
+### Implementation
+```javascript
+// Auto-generates AI images for any product name
+const generateAIImageURL = (productName) => {
+  const prompt = encodeURIComponent(
+    `${productName} sweet candy confectionery food photography high quality`
+  );
+  return `https://image.pollinations.ai/prompt/${prompt}?width=400&height=400&seed=${Math.floor(Math.random() * 1000)}`;
+};
+```
+
+### Benefits
+- ✅ **No Manual Image Management** - Images created automatically
+- ✅ **Always Relevant** - AI generates images that match product names
+- ✅ **Scalable** - Works for unlimited products without storage concerns
+- ✅ **Free Service** - No cost for image generation
+- ✅ **High Quality** - Professional food photography style results
 
 ## 🚀 Setup and Installation
 
@@ -166,7 +196,7 @@ The application features a beautiful, responsive login interface with gradient b
 ![Login Page - Clean, modern interface with sweet shop branding](screenshots/login.png)
 
 ### Dashboard - Sweet Catalog
-Users can browse through the complete catalog of sweets with beautiful product images and Indian Rupee pricing.
+Users can browse through the complete catalog of sweets with AI-generated product images and Indian Rupee pricing.
 
 ![Dashboard - Complete sweet catalog with images and pricing](screenshots/dashboard.png)
 
