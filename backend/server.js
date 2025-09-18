@@ -13,6 +13,13 @@ const HOST = process.env.HOST || 'localhost';
 const MONGODB_URI = process.env.MONGODB_URI;
 const NODE_ENV = process.env.NODE_ENV || 'development';
 
+// Function to generate AI-based image URL from product name
+const generateAIImageURL = (productName) => {
+  // Using Pollinations.ai for AI-generated images based on product name
+  const prompt = encodeURIComponent(`${productName} sweet candy confectionery food photography high quality`);
+  return `https://image.pollinations.ai/prompt/${prompt}?width=400&height=400&seed=${Math.floor(Math.random() * 1000)}`;
+};
+
 // Sample data for development
 const sampleSweets = [
   { 
@@ -20,7 +27,7 @@ const sampleSweets = [
     category: 'chocolate', 
     price: 249, 
     quantity: 50,
-    image: 'https://images.unsplash.com/photo-1549007994-cb92caebd54b?w=400&h=400&fit=crop&ixlib=rb-4.0.3',
+    image: generateAIImageURL('Chocolate Truffle'),
     description: 'Rich, decadent chocolate truffles with a smooth ganache center'
   },
   { 
@@ -28,7 +35,7 @@ const sampleSweets = [
     category: 'gummy', 
     price: 120, 
     quantity: 100,
-    image: 'https://images.unsplash.com/photo-1582058091505-f87a2e55a40f?w=400&h=400&fit=crop&ixlib=rb-4.0.3',
+    image: generateAIImageURL('Strawberry Gummy Bears'),
     description: 'Chewy strawberry-flavored gummy bears bursting with fruity goodness'
   },
   { 
@@ -36,7 +43,7 @@ const sampleSweets = [
     category: 'lollipop', 
     price: 80, 
     quantity: 75,
-    image: 'https://images.unsplash.com/photo-1606312619070-d48b4c652a52?w=400&h=400&fit=crop&ixlib=rb-4.0.3',
+    image: generateAIImageURL('Vanilla Lollipop'),
     description: 'Classic vanilla-flavored lollipops with a creamy, smooth taste'
   },
   { 
@@ -44,7 +51,7 @@ const sampleSweets = [
     category: 'hard candy', 
     price: 165, 
     quantity: 60,
-    image: 'https://images.unsplash.com/photo-1575224300306-1b8bc36a7d68?w=400&h=400&fit=crop&ixlib=rb-4.0.3',
+    image: generateAIImageURL('Mint Hard Candy'),
     description: 'Refreshing mint hard candies with a cool, invigorating flavor'
   },
   { 
@@ -52,7 +59,7 @@ const sampleSweets = [
     category: 'candy', 
     price: 289, 
     quantity: 40,
-    image: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=400&fit=crop&ixlib=rb-4.0.3',
+    image: generateAIImageURL('Rainbow Candy Canes'),
     description: 'Colorful striped candy canes with multiple fruity flavors'
   },
   { 
@@ -60,7 +67,7 @@ const sampleSweets = [
     category: 'chocolate', 
     price: 415, 
     quantity: 30,
-    image: 'https://images.unsplash.com/photo-1511381939415-e44015466834?w=400&h=400&fit=crop&ixlib=rb-4.0.3',
+    image: generateAIImageURL('Dark Chocolate Bar'),
     description: 'Premium dark chocolate bar with 70% cocoa content'
   },
   { 
@@ -68,7 +75,7 @@ const sampleSweets = [
     category: 'gummy', 
     price: 205, 
     quantity: 80,
-    image: 'https://images.unsplash.com/photo-1579952363873-27d3bfad9c0d?w=400&h=400&fit=crop&ixlib=rb-4.0.3',
+    image: generateAIImageURL('Sour Gummy Worms'),
     description: 'Tangy sour gummy worms with a perfect balance of sweet and sour'
   },
   { 
@@ -76,7 +83,7 @@ const sampleSweets = [
     category: 'lollipop', 
     price: 105, 
     quantity: 65,
-    image: 'https://images.unsplash.com/photo-1578895101408-1a36b834405b?w=400&h=400&fit=crop&ixlib=rb-4.0.3',
+    image: generateAIImageURL('Caramel Lollipop'),
     description: 'Golden caramel lollipops with a rich, buttery flavor'
   },
   { 
@@ -84,7 +91,7 @@ const sampleSweets = [
     category: 'chocolate', 
     price: 499, 
     quantity: 25,
-    image: 'https://images.unsplash.com/photo-1558312657-b2f7e2c1a3d6?w=400&h=400&fit=crop&ixlib=rb-4.0.3',
+    image: generateAIImageURL('Assorted Macarons'),
     description: 'Delicate French macarons in assorted flavors and colors'
   },
   { 
@@ -92,7 +99,7 @@ const sampleSweets = [
     category: 'candy', 
     price: 330, 
     quantity: 20,
-    image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop&ixlib=rb-4.0.3',
+    image: generateAIImageURL('Cotton Candy'),
     description: 'Fluffy, melt-in-your-mouth spun sugar cotton candy'
   },
   { 
@@ -100,7 +107,7 @@ const sampleSweets = [
     category: 'gummy', 
     price: 148, 
     quantity: 90,
-    image: 'https://images.unsplash.com/photo-1553909489-cd47e0ef937f?w=400&h=400&fit=crop&ixlib=rb-4.0.3',
+    image: generateAIImageURL('Rainbow Gummy Rings'),
     description: 'Colorful gummy rings with fruity flavors in every bite'
   },
   { 
@@ -108,7 +115,7 @@ const sampleSweets = [
     category: 'hard candy', 
     price: 190, 
     quantity: 70,
-    image: 'https://images.unsplash.com/photo-1540221652346-e5dd1f50b2f1?w=400&h=400&fit=crop&ixlib=rb-4.0.3',
+    image: generateAIImageURL('Peppermint Humbugs'),
     description: 'Traditional striped peppermint hard candies with intense mint flavor'
   }
 ];

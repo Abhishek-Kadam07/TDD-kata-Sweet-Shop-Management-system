@@ -3,9 +3,20 @@ const router = express.Router();
 const Sweet = require('../models/Sweet');
 const { authMiddleware, adminMiddleware } = require('../middleware/auth');
 
+// Function to generate AI-based image URL from product name
+const generateAIImageURL = (productName) => {
+  // Using Pollinations.ai for AI-generated images based on product name
+  const prompt = encodeURIComponent(`${productName} sweet candy confectionery food photography high quality`);
+  return `https://image.pollinations.ai/prompt/${prompt}?width=400&height=400&seed=${Math.floor(Math.random() * 1000)}`;
+};
+
 // Add sweet (Admin only)
 router.post('/', authMiddleware, adminMiddleware, async (req, res) => {
   try {
+    // Generate AI image if no image is provided
+    if (!req.body.image && req.body.name) {
+      req.body.image = generateAIImageURL(req.body.name);
+    }
     const sweet = await Sweet.create(req.body);
     res.status(201).json({ sweet });
   } catch (err) {
@@ -37,6 +48,10 @@ router.get('/search', authMiddleware, async (req, res) => {
 // Update sweet (Admin only)
 router.put('/:id', authMiddleware, adminMiddleware, async (req, res) => {
   try {
+    // Generate AI image if name is being updated and no new image is provided
+    if (req.body.name && !req.body.image) {
+      req.body.image = generateAIImageURL(req.body.name);
+    }
     const sweet = await Sweet.findByIdAndUpdate(req.params.id, req.body, { new: true });
     if (!sweet) return res.status(404).json({ error: 'Sweet not found' });
     res.status(200).json({ sweet });
