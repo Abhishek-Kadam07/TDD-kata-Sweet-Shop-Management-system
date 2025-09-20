@@ -1,6 +1,6 @@
 # 🍭 Sweet Shop Management System
 
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/Sivakanithi/TDD-Kata-Sweet-Shop-Management-System)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/Abhishek-Kadam07/TDD-kata-Sweet-Shop-Management-system.git)
 [![Node.js](https://img.shields.io/badge/Node.js-v22.12.0-green)](https://nodejs.org/)
 [![React](https://img.shields.io/badge/React-19.0.0-blue)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue)](https://www.typescriptlang.org/)
