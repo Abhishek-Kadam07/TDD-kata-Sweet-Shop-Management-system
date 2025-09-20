@@ -11,7 +11,7 @@ A comprehensive full-stack web application for managing a sweet shop, built usin
 
 ## 🌐 Public Repository
 
-**GitHub Repository:** [https://github.com/Sivakanithi/TDD-Kata-Sweet-Shop-Management-System](https://github.com/Sivakanithi/TDD-Kata-Sweet-Shop-Management-System)
+**GitHub Repository:** [https://github.com/Abhishek-Kadam07/TDD-kata-Sweet-Shop-Management-system.git](https://github.com/Abhishek-Kadam07/TDD-Kata-Sweet-Shop-Management-System)
 
 ## 📖 Project Overview
 
