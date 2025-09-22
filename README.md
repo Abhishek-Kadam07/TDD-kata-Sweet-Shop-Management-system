@@ -108,7 +108,7 @@ const generateAIImageURL = (productName) => {
 
 #### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/Sivakanithi/TDD-Kata-Sweet-Shop-Management-System.git
+git clone https://github.com/Abhishek-Kadam07/TDD-kata-Sweet-Shop-Management-system.git
 cd TDD-Kata-Sweet-Shop-Management-System
 ```
 
