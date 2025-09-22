@@ -961,7 +961,7 @@ If you encounter any issues or have questions:
 ## 🔗 Links
 
 - **Live Demo**: [Coming Soon - Deploy to your preferred platform]
-- **GitHub Repository**: [https://github.com/Sivakanithi/TDD-Kata-Sweet-Shop-Management-System](https://github.com/Sivakanithi/TDD-Kata-Sweet-Shop-Management-System)
+- **GitHub Repository**: [https://github.com/Abhishek-Kadam07/TDD-kata-Sweet-Shop-Management-system.git](https://github.com/Abhishek-Kadam07/TDD-kata-Sweet-Shop-Management-system.git)
 - **Documentation**: See ENVIRONMENT.md for detailed setup instructions
 - **Test Reports**: Run `npm test` for comprehensive test results
 
